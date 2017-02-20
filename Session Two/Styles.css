@@ -9,10 +9,10 @@ ul {
     list-style: none;
 }
 
-.navDiv li {
-    display: inline;
+.navDiv li{
+     display: inline;
 }
-
+ 
 .navDiv a {
   color: #fff;
   font-size: 11px;
@@ -21,7 +21,7 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
 }
-.right-menu{
+#right-menu{
     float: right;
     padding-right: 25px; 
 }
@@ -52,7 +52,7 @@ ul {
 }
 
 table, td, th {
-    border: solid 1px #D5D5FF;
+    border: solid 4px #D5D5FF;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
