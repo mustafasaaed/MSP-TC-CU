@@ -1,18 +1,36 @@
-body{ margin: 0px;}
+body{ 
+   /* background-image: url('https://lh3.googleusercontent.com/qXPS8IpBfLslT8sZTfnPFbOSSdjBG-tS9UdXjuhN3m3ctflWN3DZLKRa9H-BIfSa1yOQeQ=s170');
+    
+    background-repeat: no-repeat;
+        background-attachment:local; */  
+
+    margin: 0px;
+
+}
 
 .navDiv {
-    background-color:#1fa075;
+       background-color:#1fa075;
+
+ /*background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/stones-iphone-6-plus-wallpaper.jpg') ; */  
+
 }
+
+
+
+
+
+
 
 ul {
     display: inline-block;
     list-style: none;
 }
 
-.navDiv li{
-     display: inline;
+.navDiv li {
+    
+    display: inline;
 }
- 
+
 .navDiv a {
   color: #fff;
   font-size: 11px;
@@ -21,11 +39,11 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 #right-menu{
     float: right;
     padding-right: 25px; 
 }
-
 .page {
     margin-left: 40px; 
 }
@@ -60,7 +78,7 @@ table, td, th {
 }
 
 td {
-    background-color:#F4F4F5 ;
+    background-color:black ;
 }
 
 td, th {
@@ -74,3 +92,21 @@ td, th {
 tr:nth-child(even) td {
     background-color: #fff849;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
