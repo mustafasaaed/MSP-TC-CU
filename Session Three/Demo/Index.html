@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function changeParagrapgh()
+        {
+            document.getElementById("firstpar").innerHTML = "JavaScript Paragraph.";
+        }     
+    </script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <h1>Scripts Demo</h1>
+    <p id="firstpar">Initial Paragraph</p>
+    <button type="button" onclick="changeParagrapgh()">Change</button>
+
+
+    <p id="a"></p>
+    <!--<script>
+        function changeParagrapgh() {
+            document.getElementById("firstpar").innerHTML = "JavaScript Paragraph.";
+        }
+    </script>-->
+
+    <p id="calc"></p>
+    <script>
+        var x;
+        var y;
+        var z;
+
+        x = 10;
+        y = 20;
+
+        z = x + y;
+
+        document.getElementById("calc").innerHTML = z;
+    </script>
+
+    <!--operators -->
+    <p id="oper"></p>
+    <script>
+          //var y = 6;
+          var x = (20 - 10) * 6;
+          document.getElementById("oper").innerHTML = x;
+    </script>
+
+
+    <!--External calculate func-->
+    <p id="showData"></p>
+    <button type="button" onclick="showdata()">Calculate</button>
+
+    <!--variables-->
+    <p id="variable" /pid>></p>
+    <script>
+            var x = 10;
+            x = "Reko";
+            document.getElementById("variable").innerHTML = x;
+    </script>
+
+    <!--Objects-->
+    <p id="object">
+        <script>
+            var person = { firstname: "Muhammed", lastname: "Hesham", age: 21 };
+            document.getElementById("object").innerHTML = person;
+
+         document.getElementById("object").innerHTML = person.firstname + " is " 
+             + person.age + " years old";
+        </script>
+    </p>
+
+    <p id="types"></p>
+    <script>
+            var num = 10;
+            document.getElementById("types").innerHTML = typeof (num);
+
+            var person = { firstname: "Muhammed", lastname: "Hesham", age: 21 };
+            document.getElementById("types").innerHTML = typeof (person);
+    </script>
+
+    <p id="event"></p>
+    <button onclick="document.getElementById('event').innerHTML = Date()">The time is?</button>
+
+
+    <p id="switchdemo"></p>
+    <script>
+            var day;
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+0                    day = "Saturday";
+                    break;
+            }
+            document.getElementById("switchdemo").innerHTML = "Today is " + day;
+    </script>
+
+    <h1>JavaScript Loops</h1>
+    <p>FOR </p>
+    <p id="forloop"></p>
+    <script>
+            var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+            var text = "";
+            var i;
+            
+            for (i = 0; i < cars.length; i++)
+            {
+                text += cars[i] + "<br>";
+                document.getElementById("forloop").innerHTML = text;
+            }
+            //document.getElementById("forloop").innerHTML = text;
+    </script>
+
+    <p style="font-size: 24px;">While</p>
+    
+    <p id="whileloop"></p>
+    <script>
+        var text = "";
+        var i = 0;
+        while(i < 10)
+        {
+            text += "<br>the number is " + i;
+            i++;
+            document.getElementById("whileloop").innerHTML = text; 
+        }
+    </script>
+
+    <p style="font-size: 24px;">Break</p>
+    <p id="break" ></p>
+    <script>
+        var text = ""; 
+        for(i = 0; i <10; i++)
+        {
+            if(i == 3)
+            {
+                break;
+            }
+            text += " number is " + i + "<br/>";
+            document.getElementById("break").innerHTML = text;
+        }
+    </script>  
+</body>
+</html>
