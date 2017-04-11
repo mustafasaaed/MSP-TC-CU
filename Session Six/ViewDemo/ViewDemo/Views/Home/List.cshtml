@@ -1,0 +1,31 @@
+﻿@*@model List<ViewDemo.Models.Album>
+
+    @{
+
+    }
+
+    <ul style="list-style: none;">
+        @foreach (var album in Model)
+        {
+            <li>@album.Title</li>
+        }
+    </ul>
+
+*@
+
+@*<form action="/albums/Search" method="get">
+    <input name="q" type="text" />
+    <input value="Search" type="submit" />
+</form>*@
+
+@*@using (Html.BeginForm("Search", "Albums", FormMethod.Get))
+{
+    <input name="q" type="text" />
+    <input value="Search" type="submit" />
+}*@
+
+@*<input id="Title" name="Title" type="text" value=""/>*@
+
+
+@/*Html.TextArea("text", "hello <br/> world")*/
+
