@@ -1,0 +1,15 @@
+﻿@model LastDemo.Models.Post
+
+
+<div>
+    <a href="@Url.Action("Post", "Posts", new { id = Model.Id})">
+       
+        <h1>@Html.DisplayFor(m => m.Title)</h1>
+        <h2>@Html.DisplayFor(m => m.Description)</h2>
+        <h4>@Html.DisplayFor(m => m.PostedOn)</h4>
+
+    </a>
+
+    <a href="@Url.Action("Delete", "Posts", Model)">Delete This Post</a>
+</div>
+<hr />

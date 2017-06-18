@@ -1,0 +1,15 @@
+﻿@model List<LastDemo.Models.Post>
+
+<h2>All posts</h2>
+
+@if (Model.Count > 0)
+{
+    foreach (var post in Model)
+    {
+        @Html.Partial("_PostsTemplate", post)
+    }
+}
+else
+{
+    <h2>No posts</h2>
+}        
