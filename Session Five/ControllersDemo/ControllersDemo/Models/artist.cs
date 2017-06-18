@@ -9,6 +9,5 @@ namespace ControllersDemo.Models
     {
         public int id { get; set; }
         public string artistname { get; set; }
-
     }
 }

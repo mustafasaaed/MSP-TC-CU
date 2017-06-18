@@ -1,0 +1,101 @@
+﻿@using ViewDemo.Models
+
+@model ViewDemo.Models.Album
+
+
+@{
+    ViewBag.Title = "Test";
+}
+
+<h2>Test</h2>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+    </table>*@
+
+@*@Html.LabelFor(l => l.Title, new { @class = "col-md-2 control-label" })
+
+    @Html.TextBoxFor(l => l.Title, new { @class = "form-control" })*@
+
+
+@using (Html.BeginForm("Test", "Albums"))
+{
+
+    var list = new List<Artist>()
+    {
+        new Artist { Name = "Adele"},
+        new Artist {Name = "Maroon"},
+        new Artist {Name = "Hugh Lauire"}
+    };
+
+    <div class="form-group">
+        @*@Html.EditorFor(m => m.Title, new { @class = "col-md-2 control-label" })
+            @Html.ValidationMessageFor(m => m.Title)
+            @Html.EditorFor(m => m.Title)
+            @Html.ValidationMessageFor(m => m.Title)*@
+                @*@Html.LabelFor(m => m.Title)
+        @Html.EditorFor(m => m.Title)
+        <br />
+        <br />
+        <br />
+        <br /><br />
+
+        @Html.TextBoxFor(m => m.Title)
+        @Html.DropDownListFor(m => m.Artists, new SelectList(list.OrderBy(g => g.Name), "Name", "Name"))
+
+                    *@
+        <br />
+        <br />
+        <br />
+        <br /><br />
+
+        @*@Html.TextAreaFor(m => m.Title)
+
+        <textarea data-val="true" data-val-required="The Title field is required." id="Title" name="Title" >
+        </textarea>*@
+
+
+        @Html.TextBoxFor(m => m.Title)
+
+        <input data-val="true" id="Title" name="Title" type="text" value="" />
+
+
+
+
+
+
+    </div>
+    <button type="submit" class="btn btn-primary">Save </button>
+
+
+
+
+
+}
+
+
+
+
+
